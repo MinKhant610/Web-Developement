@@ -1,0 +1,157 @@
+body {
+    background-color: #C8C9CC;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3% auto;
+}
+
+.leftbox {
+    width: 33%;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 5px;
+    
+}
+
+.leftFont {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.leftTopImg {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.leftImg {
+    width: 80px;
+    margin-bottom: 10px;
+    
+}
+
+.lbfont {
+    display: flex;
+    justify-content: space-around;
+}
+
+.divider {
+    height: 1px;
+    background-color: black;
+    margin-top: 2px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.goLogo {
+    padding-right: 20px;
+}
+
+.orfont {
+    text-align: center;
+}
+
+.inputBox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+
+.inputWidth {
+    height: 43px;
+    width: 400px;
+    border-radius: 5px;
+    border-style: groove;
+    border-width: 1px;
+    padding-left: 20px;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+    
+}
+
+.inputButtom {
+    display: flex;
+    margin-left: 16%;
+    margin-top: 20px;
+    
+}
+
+.signUp {
+    margin-top: 25px;
+   
+}
+
+.signBg {
+    background-color: #9B9B9B;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.rightbox {
+    width: 35%; 
+}
+
+.rightImg {
+    width: 644px;
+    height: 820px;
+}
+
+@media (max-width : 1200px) {
+    .rightbox{
+        display: none;
+    }
+
+    .leftbox {
+        width: 60%;
+        border-radius:10px ;
+    }
+    
+    .signBg {
+        margin-bottom: 10px;
+    }
+
+    .inputButtom {
+        margin: 5%;
+    }
+}
+
+
+@media (max-width:863px) {
+    .rightbox{
+        display: none;
+    }
+
+    .leftbox {
+        width: 60%;
+        border-radius:10px ;
+    }
+    
+}
+
+@media (max-width:733px) {
+    .rightbox{
+        display: none;
+    }
+
+    .leftbox {
+        width: 100%;
+        border-radius:10px ;
+    }
+    
+}
+

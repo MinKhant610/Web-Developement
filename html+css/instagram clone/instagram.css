@@ -1,0 +1,182 @@
+.container {
+    
+    display: flex;
+    justify-content: space-around;
+    flex: warp;    
+}
+
+.inner {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+.left {
+    display: flex;   
+    margin-right: -9%;
+}
+
+.right {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    
+    
+}
+
+.rightbox {
+    margin-left: -10%;
+}
+
+.rigbo {
+    border-style: solid;
+    width: 140%;
+}
+
+.font {
+    font-size: 40px;
+    font-style: oblique;
+    text-align: center;
+}
+
+.login {
+    margin-bottom: 10px;
+    background-color: #FAFAFA;
+    font-size: 16px;
+    width: 290px;
+    display: flex;
+    padding:9px 0px 7px 8px;
+    margin-left: 20%;
+    
+}
+
+
+
+.buttom {
+    width: 300px;
+    padding:9px 0px 7px 8px;
+    font-size: 16px;
+    font-style: oblique;
+    background-color: #B2DFFC;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20%;
+}
+
+.lgfont {
+    color:#D9F9FF ;
+    
+}
+
+.refer {
+    color: #385185;
+    border: none;
+    font-size: 18px;
+    display: flex;
+    background-color: white;
+    font-style: italic;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+.lgdiv {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.or {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttomBox {
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    margin-top: 20px;
+    width: 140%;
+    height: 40px;
+    
+}
+.sg {
+    text-decoration: none;
+}
+
+.sg {
+    color: rgba(31, 55, 163, 0.521);
+}
+.text {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.sign {
+    color: #009EF9;
+    font-style: oblique;
+    margin-left: 5px;
+}
+
+.forget {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.get {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+}
+
+.store {
+    text-align: center;
+    margin-left: 50px;
+}
+
+
+.apple {
+    width: 136px;
+    height: 40px;
+}
+
+.google {
+    width: 134px;
+    height: 40px;
+}
+
+.leftImg {
+    width: 455px;
+    height: 619px;
+}
+
+.bottom {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.bt1 {
+    margin-bottom :1%;
+}
+
+
+@media (max-width : 870px) {
+    .left{
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
