@@ -1,0 +1,48 @@
+body{
+    background-color:#313340;
+}
+
+.container {
+    max-width: 1000px;
+    margin-top: 100px;
+}
+
+.transition {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    margin: 20px;
+    transition-property:width ;
+    transition-duration:1s ;
+    transition-timing-function:ease ;
+    /* transition : width 1s ease */
+}
+
+.runTransition {
+    width: 500px;
+}
+
+.transform{
+    width: 100px;
+    height: 10px;
+    background-color: red;
+    margin: 20px;
+}
+
+.runTransform {
+    transform: rotate(45deg);
+}
+
+.animation{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: red;
+    margin: 20px;
+    transition: transform 1s ease-in-out;
+}
+
+.runanimation {
+    transform: scale(3) translateX(300px);
+}
+
