@@ -1,0 +1,35 @@
+body{
+    background-color: #3d405b;
+    color: white;
+}
+
+.parent {
+    background-color: #1d3557;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-top: 300px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+}
+
+
+.box1 {
+    background-color: #a8dadc;
+    /*position: absolute; => duplicate */ 
+}
+
+.box2 {
+    background-color: aliceblue;
+    position: relative;
+    top: 30px ; /*if position is relative we can use top button left and right*/
+}
+
+.box3 {
+    background-color: red;
+}

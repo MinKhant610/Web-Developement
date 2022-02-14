@@ -75,6 +75,7 @@ body {
     position: absolute;
     cursor: pointer;
     display: none;
+    opacity: 0;
 }
 .currentPlayingMusic {
     font-size: 20px;
