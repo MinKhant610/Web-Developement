@@ -1,0 +1,28 @@
+body {
+    background-color: aquamarine;
+    height: 100vh;
+}
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.alert {
+    padding: 10px;
+    position: relative;
+    background-color: black;
+    color: white;
+    transition: bottom 0.4 ease-in-out;
+}
