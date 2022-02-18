@@ -23,4 +23,3 @@ const openText = () => {
 buttton_tag.addEventListener ('click', ()=> {
     openText ()
 })
-
