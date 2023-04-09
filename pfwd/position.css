@@ -1,0 +1,24 @@
+.box1{
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    background: cyan;
+    position:relative;
+
+}
+
+.box2{
+    width: 300px;
+    height : 200px;
+    background:yellow;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.box{
+    width: 600px;
+    height: 400px;
+    background: linear-gradient(45deg, cyan, green);
+    border-radius: 20px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="important.css">
+    <title>Important element</title>
+</head>
+<body>
+    
+    <div>
+        <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>
+        <a href="https://en.wikipedia.org/wiki/HTML#Elements">Elements</a>
+    </div>
+    
+    <ul>
+        <li>Chapter 1</li>
+        <li> <a href="#ch2" title="go to chapter2">Chapter 2</a></li>
+        <li>Chapter 3</li>
+        <li> <a href="#ch4" title="go to chapter4">Chapter 4</a></li>
+    </ul>
+
+    <p>
+    Sure! A B+ tree is a data structure commonly used in computer science to store large amounts of data in a sorted way. It is often used in databases and file systems to efficiently retrieve data. Here's a beginner's guide on how to implement a B+ tree step by step:
+    Step 1: Decide on the structure of the nodes
+    A B+ tree consists of nodes, with the root node at the top and leaf nodes at the bottom. Each node has a number of keys and pointers to child nodes. The leaf nodes also contain the data entries. There are different ways to structure the nodes,
+    but one common method is to use an array to store the keys and pointers. For example, a node with four keys might look like this:
+    </p>
+
+    <p id="ch2">
+    <h5>Chapter2</h5>
+    Step 2: Determine the order of the tree
+    The order of the tree is the maximum number of keys that can be stored in each node.
+    It is usually denoted as M. The order of the tree affects the depth of the tree and the
+    number of nodes needed to store a given amount of data. A higher order means fewer nodes,
+    but more memory usage per node.
+    Step 3: Implement insertion
+    To insert a new key-value pair into the tree, start at the root node and traverse
+    the tree until you find the appropriate leaf node. If the leaf node has room for the new key, insert it and the associated value. If the leaf node is full, split it into two nodes and insert the new key-value pair into the appropriate node. Update the parent node with the new key, and if necessary, split the parent node as well.
+    </p>
+
+    <p>hello I am chapter 3</p>
+    <p id="ch4">hello I am chapter 4</p>
+
+    <p>Browser List</p>
+    <p class="browser" id="popular">Google Chrome</p>
+    <p class="browser">Mozilla Firefox</p>
+    <input type="text">
+    <input type="submit">
+</body>
+</html>

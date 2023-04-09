@@ -1,0 +1,497 @@
+/* ------ Basic setup ------- */
+
+*{
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: white;
+    color: #555;
+    font-family: 'Lato','Arial' sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+/* ---------- Reusable component----------- */
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.clear-fix{
+    zoom: 1;
+}
+
+.clear-fix::after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+section{
+    padding: 80px 0px;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/pexels-jane-doan-1099680.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text{
+    width: 1140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.long-para{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+
+.box{
+    padding: 1%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.icon-big{
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+/* -------------Header Section ---------------- */
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 240%;
+    word-spacing: 3px;
+}
+
+h1,h2,h3{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+    word-spacing: 2px;
+    font-size: 180%;
+    letter-spacing: 1px;
+}
+
+h2:after{
+    content: " ";
+    display: block;
+    width: 110px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #e67e22;
+    margin-top: 30px;
+}
+
+
+
+/* -----------logo------------ */
+.logo{
+    height: 80px;
+    width : auto;
+    border-radius: 60px;
+    float: left;
+    margin-top: 30px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li :hover{
+    border-bottom: 2px solid #e67e22 ;
+    padding: 8px 0px;
+    transition: 0.5s;
+}
+
+.main-nav li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+
+/* ----------------Button Section------------------- */
+.btn:link,.bin:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    
+    border-radius: 200px;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color:#e67e22;
+    border: 1px solid #e67e22;
+    color: white;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    color: #e67e22;
+    border: 1px solid #e67e22;
+}
+
+.btn-full:hover{
+    background: #e68b3b;
+
+}
+
+.btn-ghost:hover{
+    color: white;
+    background: #e67e22;
+    transition: 0.5s;
+}
+
+/* -------------------Feature Section----------------- */
+.section-feature .long-para{
+    margin-bottom: 30px;
+    
+}
+
+
+/* -------------------Meal Section----------------- */
+
+.section-meals{
+    padding: 0;
+    margin-top: 20%;
+}
+
+.meal-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meal-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+    background-color: black;
+
+}
+
+.meal-photo{
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.meal-photo img{
+    opacity: 70%;
+    width: 100%;
+    height: 400px;
+    transform: scale(1.15);
+    transition: 0.7s;
+}
+
+.meal-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+/* -------------------How it work ----------------- */
+
+.app-screen{
+    padding-left: 25%;
+}
+
+.steps-box{
+    margin-top: 30px;
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 5%;
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.work-step{
+    margin-bottom: 50px;
+}
+
+.work-step div{
+    display: inline-block;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 6px;
+    font-size: 150%;
+    float: left;
+    margin-right: 25px;
+}
+
+.app-store-logo{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.second-step{
+    margin-top: 5%;
+}
+
+.work-step:last-of-type{
+    margin-bottom: 80px;
+}
+
+.section-steps{
+    background-color: #cfcfcf;
+}
+
+/* ------------------- Section Cities ----------------- */
+
+.city-img-box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature{
+    margin-bottom: 15px;
+}
+
+.icon-small{
+    color: #e67e22;
+    font-size: 120%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.city-twitter{
+    text-decoration: none;
+    color:#e68b3b;
+}
+
+.city-twitter:hover,
+.city-twitter:active{
+    border-bottom: 1px solid #e67e22;
+    color: black;
+    padding-bottom: 2px;
+    transition: 0.5s;
+}
+
+
+/*--------------------Testmoinals Section -------------------*/
+
+.testimonials{
+    background-image: linear-gradient(rgba(0,0,0,0.73),rgba(0,0,0,0.7)),url(img/food_back.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+blockquote{
+    font-style: italic;
+    padding: 2%;
+    line-height: 145%;
+}
+blockquote:before {
+    content: open-quote; 
+    font-size: 400%;
+}
+
+blockquote:after{
+    content: close-quote;
+    color: transparent;
+    height: 0;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*--------------------Sign Up Section -------------------*/
+
+.section-plan{
+    background-color: #cfcfcf;
+}
+
+.plan-box{
+    background-color: #ffff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #edecea;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.plan-price{
+    margin-bottom:10px ;
+    font-weight: 100;
+    font-size: 300%;
+}
+
+.plan-price-meal{
+    font-size: 80%;
+}
+
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0px;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border: 0;
+}
+
+/*-------------------- Form Section -------------------*/
+
+.content-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+
+textarea{
+    height: 100px;
+}
+
+.send-it-box{
+    background-color: rgb(0, 76, 255);
+    color: #cfcfcf;
+    border:none
+}
+
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+/*-------------------- Footer Section -------------------*/
+
+footer{
+    background-color: #1e1e1e;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.footer-nav li,
+.social-link li{
+    display: inline-block;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+.footer-nav li:last-child,
+.social-link li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav li a{
+    text-decoration: none;
+}
+
+.footer-nav li a:hover{
+    color: white;
+}
+
+.footer-nav li a,
+.social-link li a {
+    color: grey;
+}
+
+
+.social-link{
+    list-style: none;
+    float: right;
+}
+
+.social-link li a {
+    font-size: 120%;
+}
+
+.social-link li a :hover{
+    color: white;
+}
+
+footer p{
+    text-align: center;
+    color: #888;
+    font-size: 90%;
+    padding: 100px;
+}

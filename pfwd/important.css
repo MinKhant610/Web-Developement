@@ -1,0 +1,16 @@
+p{
+    padding: 10px;
+
+}
+
+.browser{
+    background :cyan;
+}
+
+#popular{
+    font-weight: bold;
+}
+
+input[type=text]{
+    width: 400px;
+}

@@ -1,0 +1,21 @@
+.warp{
+    width: 400px;
+    height: 400px;
+    border: 5px solid red;
+
+}
+
+.box1, .box2{
+    width: 340px;
+    height: 140px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.box1 {
+    background: yellow;
+}
+
+.box2{
+    background: cyan;
+}
