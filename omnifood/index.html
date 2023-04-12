@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
     <title>Omnifood</title>
+    <!-- Fav Icon-->
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicon/site.webmanifest">
+    <link rel="mask-icon" href="resources/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="resources/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="resources/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="vendors/css/gird.css">
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/query.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,29 +31,30 @@
         <nav>
             <div class="row">
                 <img src="resources/css/img/logo.jpeg" alt="Omni Food logo" class="logo">
-                <ul class="main-nav">
+                <ul class="main-nav js-main-nav">
                     <li>
-                        <a href="#"> Food delivary</a>
+                        <a href="#feature"> Food delivary</a>
                     </li>
                     <li>
-                        <a href="#"> How it works</a>
+                        <a href="#how-it-work"> How it works</a>
                     </li>
                     <li>
-                        <a href="#"> Our Cities</a>
+                        <a href="#city"> Our Cities</a>
                     </li>
                     <li>
-                        <a href="#"> Sign Up</a>
+                        <a href="#sign-up"> Sign Up</a>
                     </li>
                 </ul>
+                <a class="mobile-nav-icon js-mobile-nav-icon"><i class="fa-solid fa-bars"></i></a>
             </div>
         </nav>
         <div class="hero-text">
             <h1>Good bye junk food.<br>Hello super healthy meal.</h1>
-            <a href="#" class="btn btn-full"> I'm hungry </a>
-            <a href="#" class="btn btn-ghost"> Show me more </a>
+            <a href="#" class="btn btn-full js-btn-full"> I'm hungry </a>
+            <a href="#" class="btn btn-ghost js-btn-ghost"> Show me more </a>
         </div>
     </header>
-    <section class="section-feature">
+    <section class="section-feature js-section-feature clear-fix" id="feature">
         <div class="row">
             <h2>Get food fast &mdash; not fast food</h2>
             <p class="long-para">
@@ -48,7 +63,7 @@
                 of that, we're really good at it, we promise!
             </p>
         </div>
-        <div class="row">
+        <div class="row js-wp-1">
             <div class="col span_1_of_4 box">
                 <i class="fa-regular fa-clock icon-big"></i>
                 <h3>Up to 365 days/year</h3>
@@ -131,7 +146,7 @@
             </li>
         </ul>
     </section>
-    <section class="section-steps clear-fix">
+    <section class="section-steps clear-fix" id="how-it-work">
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
@@ -163,7 +178,7 @@
             </div>
         </div>
     </section>
-    <section class="section-cities clear-fix">
+    <section class="section-cities clear-fix" id="city">
         <div class="row">
             <h2>We are currently in these cities</h2>
         </div>
@@ -243,7 +258,7 @@
             </div>
         </div>
     </section>
-    <section class="section-plan clear-fix">
+    <section class="section-plan clear-fix js-section-plan" id="sign-up">
         <div class="row">
             <h2>Starter eating healthy today</h2>
         </div>
@@ -298,8 +313,8 @@
                     <div>
                         <ul>
                             <li><i class="fa-solid fa-lightbulb icon-small"></i>1 meal</li>
-                            <li><i class="fa-solid fa-lightbulb icon-small"></i>Order from 8 am to 12 pm3</li>
-                            <li><i class="fa-solid fa-lightbulb icon-small"></i></li>
+                            <li><i class="fa-solid fa-lightbulb icon-small"></i>Order from 8 am to 12 pm</li>
+                            <li>&nbsp;</li>
                             <li><i class="fa-solid fa-lightbulb icon-small"></i> Free delivary</li>
                         </ul>
                     </div>
@@ -417,5 +432,10 @@
             </p>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha512-qWVvreMuH9i0DrugcOtifxdtZVBBL0X75r9YweXsdCHtXUidlctw7NXg5KVP3ITPtqZ2S575A0wFkvgS2anqSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="resources/js/script.js"></script>
 </body>
 </html>
