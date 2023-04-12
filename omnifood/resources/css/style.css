@@ -1,9 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* ------ Basic setup ------- */
 
 *{
     margin :0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html{
@@ -38,6 +46,8 @@ section{
 }
 
 header{
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0.7))),url(img/pexels-jane-doan-1099680.jpg);
+    background-image: -o-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/pexels-jane-doan-1099680.jpg);
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/pexels-jane-doan-1099680.jpg);
     background-size: cover;
     background-position: center;
@@ -50,7 +60,9 @@ header{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .long-para{
@@ -139,6 +151,8 @@ h2:after{
 .main-nav li :hover{
     border-bottom: 2px solid #e67e22 ;
     padding: 8px 0px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -194,6 +208,8 @@ input[type=submit]{
 .btn-ghost:hover{
     color: white;
     background: #e67e22;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -233,12 +249,18 @@ input[type=submit]{
     opacity: 70%;
     width: 100%;
     height: 400px;
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
     transition: 0.7s;
 }
 
 .meal-photo img:hover{
-    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
     opacity: 1;
 }
 
@@ -324,6 +346,8 @@ input[type=submit]{
     border-bottom: 1px solid #e67e22;
     color: black;
     padding-bottom: 2px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -331,6 +355,8 @@ input[type=submit]{
 /*--------------------Testmoinals Section -------------------*/
 
 .testimonials{
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.73)),to(rgba(0,0,0,0.7))),url(img/food_back.jpg);
+    background-image: -o-linear-gradient(rgba(0,0,0,0.73),rgba(0,0,0,0.7)),url(img/food_back.jpg);
     background-image: linear-gradient(rgba(0,0,0,0.73),rgba(0,0,0,0.7)),url(img/food_back.jpg);
     background-size: cover;
     color: white;
@@ -377,7 +403,8 @@ cite img{
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
-    box-shadow: 0 2px 2px #edecea;
+    -webkit-box-shadow: 0 2px 2px #edecea;
+            box-shadow: 0 2px 2px #edecea;
 }
 
 .plan-box div{
