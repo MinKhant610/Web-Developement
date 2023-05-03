@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <h1>Vue Start</h1>
+    <div id = "app">
+       <div v-if = "showbook">
+            <p>Book name - {{title}}</p>
+            <p>author - {{author}}</p>
+            <p>Author age - {{age}}</p>
+       </div> 
+       <button @click = "showbook = !showbook">
+        <span v-if = "showbook">hide</span>
+        <span v-if = "!showbook">show</span>
+       </button>
+    </div>
+    <script src="first-vu.js"></script>
+</body>
+</html>
