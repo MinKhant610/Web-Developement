@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>HOME</title>
+    <style>
+        li{
+            list-style: none;
+        }
+    .favourite{
+        background-color: aqua;
+    }
+    a{
+        padding:0 20px;
+        text-decoration: none;
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="">HOME</a>
+        <a href="compute-test.html">Favourite Books</a>
+    </nav>
+    <div class="app">
+        <div v-if="showbook">
+            <!-- book =>  any name // books => array name -->
+            <!-- filterBooks is computed function -->
+            <ul v-for = "book in books">
+                <li :class="{favourite :book.isFav}">
+                    <img :src = "book.img" width="150" alt="">
+                    <p>Book Name - {{book.title}}</p>
+                    <p>Author Name - {{book.author}}</p>
+                    <p>Age - {{book.age}}</p>
+                    <button  @click = "addFav(book)">
+                        <span v-if = !book.isFav>Add Fav</span>
+                        <span v-if = book.isFav>Remove Fav</span>
+                    </button><hr>
+                </li>
+            </ul>
+        </div>
+        <button @click = "showbook = !showbook">
+            <span v-if = "showbook">hide</span>
+            <span v-if = "!showbook">show</span>
+        </button>
+        <!-- v-bind:href {{}} or :herf = 'link'-->
+        <a :href="link">Google</a>
+    </div>
+    <script src="v-for.js"></script>
+</body>
+</html>

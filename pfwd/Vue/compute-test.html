@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Favourite</title>
+    <style>
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <!-- book =>  any name books => array name -->
+        <!-- filterBooks is computed function -->
+        <ul v-for = "book in filterBooks">
+            <li :class="{favourite :book.isFav}">
+                <img :src = "book.img" width="150" alt="">
+                <p>Book Name - {{book.title}}</p>
+                <p>Author Name - {{book.author}}</p>
+                <p>Age - {{book.age}}</p>
+            </li>
+            <button  @click = "addFav(book)">
+                <span v-if = !book.isFav>Add Fav</span>
+                <span v-if = book.isFav>Remove Fav</span>
+            </button><hr>
+        </ul>
+    </div>
+    <script src="v-for.js"></script>
+</body>
+</html>
